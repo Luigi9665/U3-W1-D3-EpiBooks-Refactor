@@ -31,6 +31,7 @@ body {
 .toPointer {
   background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   cursor: pointer;
+  transition: all 0.2s ease;
 }
 .toPointer:hover {
   scale: 1.1;
@@ -38,10 +39,8 @@ body {
     rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.toPointer:active {
-  scale: 1;
-}
-
+.toPointer:active,
 .selected {
+  scale: 1;
   box-shadow: green 0px 54px 55px, green 0px -12px 30px, green 0px 4px 6px, green 0px 12px 13px, green 0px -3px 5px;
 }
