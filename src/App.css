@@ -1,11 +1,13 @@
 body {
-  background: linear-gradient(to right, #403b4a, #e7e9bb);
+  background: linear-gradient(to right, #000000, #e74c3c);
 }
 
 .book-title {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  color: white;
+  font-size: 18px;
 }
 
 .sizeFinger {
@@ -24,4 +26,22 @@ body {
   100% {
     transform: scale(1);
   }
+}
+
+.toPointer {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  cursor: pointer;
+}
+.toPointer:hover {
+  scale: 1.1;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.toPointer:active {
+  scale: 1;
+}
+
+.selected {
+  box-shadow: green 0px 54px 55px, green 0px -12px 30px, green 0px 4px 6px, green 0px 12px 13px, green 0px -3px 5px;
 }

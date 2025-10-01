@@ -2,7 +2,7 @@ import { Alert } from "react-bootstrap";
 
 const Welcome = function (props) {
   return (
-    <Alert variant="success" className="text-center">
+    <Alert variant="light" className="text-center my-3" dismissible>
       <h2 className="display-4">Welcome</h2>
       <p className="fs-4">{props.sottoTitolo}</p>
       <p className="fs-4">
