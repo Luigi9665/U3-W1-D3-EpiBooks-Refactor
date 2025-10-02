@@ -2,14 +2,16 @@ import { Component } from "react";
 import { Col } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 
-// destrutturazione della props con book
+// destrutturazione della props con book con la function
 class SingleBook extends Component {
   state = {
     selected: false,
   };
 
   render() {
+    // rimuovo la destrutturazione con la classe
     const { book } = this.props;
+
     return (
       <Col sm={6} md={4} lg={3} xl={2}>
         <Card

@@ -28,7 +28,10 @@ class BookList extends Component {
         <Row className="g-4">
           {this.state.search.length > 0
             ? books
-                .filter((book) => book.title.toLowerCase().includes(this.state.search.toLowerCase()))
+                .filter(
+                  (book) =>
+                    book.title.toLowerCase().includes(this.state.search.toLowerCase()) || book.asin.toLowerCase().includes(this.state.search.toLowerCase())
+                )
                 .map((book) => <SingleBook key={book.asin} book={book} />)
             : books.map((book) => <SingleBook key={book.asin} book={book} />)}
         </Row>
